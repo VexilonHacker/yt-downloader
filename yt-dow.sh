@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define constants
-declare -r LOGO_DIR="$HOME/.Projects/bash/yt-do-proj/logo"
+declare -r LOGO_DIR="logo"
 declare -r DOWNLOADED_HISTORY="$HOME/.yt_videos_history.txt"
 declare -r MUSIC_DIR="$HOME/Music"
 declare -r VIDEOS_DIR="$HOME/Videos/"
@@ -71,11 +71,22 @@ save_download_info() {
 
 # Function to print the logo
 print_logo() {
-    if [[ -f "$LOGO_DIR" ]]; then
-        cat "$LOGO_DIR"
-    else
-        echo "Logo file not found."
-    fi
+    logo='
+	             /$$                /$$                                   /$$                           /$$                    
+	            | $$               | $$                                  | $$                          | $$                    
+	 /$$   /$$ /$$$$$$         /$$$$$$$  /$$$$$$  /$$  /$$  /$$ /$$$$$$$ | $$  /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$   /$$$$$$ 
+	| $$  | $$|_  $$_//$$$$$$ /$$__  $$ /$$__  $$| $$ | $$ | $$| $$__  $$| $$ /$$__  $$ |____  $$ /$$__  $$ /$$__  $$ /$$__  $$
+	| $$  | $$  | $$ |______/| $$  | $$| $$  \ $$| $$ | $$ | $$| $$  \ $$| $$| $$  \ $$  /$$$$$$$| $$  | $$| $$$$$$$$| $$  \__/
+	| $$  | $$  | $$ /$$     | $$  | $$| $$  | $$| $$ | $$ | $$| $$  | $$| $$| $$  | $$ /$$__  $$| $$  | $$| $$_____/| $$      
+	|  $$$$$$$  |  $$$$/     |  $$$$$$$|  $$$$$$/|  $$$$$/$$$$/| $$  | $$| $$|  $$$$$$/|  $$$$$$$|  $$$$$$$|  $$$$$$$| $$      
+	 \____  $$   \___/        \_______/ \______/  \_____/\___/ |__/  |__/|__/ \______/  \_______/ \_______/ \_______/|__/      
+	 /$$  | $$                                                                                                                 
+	|  $$$$$$/                                                                                                                 
+	 \______/                                                                                                                  
+
+'
+    printf "%s\n" "$logo"
+
 }
 
 # Main script

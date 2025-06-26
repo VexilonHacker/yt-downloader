@@ -5,7 +5,7 @@ All downloaded URLs are automatically saved to `~/.yt_videos_history.txt` for ea
 
 ---
 
-![yt-downloader demo](https://github.com/VexilonHacker/yt-downloader/blob/951b87533353890438d0596721921413a196f6d8/Shot-2025-06-26-145604.png?raw=true)
+![yt-downloader](menu.jpg)
 
 ---
 
